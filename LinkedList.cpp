@@ -1,20 +1,6 @@
 #include <iostream>
 #include "LinkedList.h"
 
-int main()
-{
-	ListNode* list = addNode(NULL, 5); //testing if addNode works with null
-	std::cout << list->value << "\n";
-
-	addNode(list, 7); //testing if addNode works normally
-	std::cout << list->next->value << "\n";
-
-	std::cout << list->next << "\n"; //testing if removeNode works
-	removeNode(list);
-	std::cout << list->next << "\n";
-
-}
-
 /*function initializes a node
 input: none
 output: the new node*/
